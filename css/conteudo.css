@@ -1,0 +1,158 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.digital {
+  justify-self: center;
+  margin-bottom: 20px;
+}
+
+.login-box {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  background: var(--cor-2);
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(128, 0, 128, 0.2);
+
+}
+
+.login-box h1 {
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.login-box p {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.form {
+  display: grid;
+  gap: 20px;
+}
+
+.form-campo label {
+  display: block;
+  font: 400 1rem/1.5 "Outfit", sans-serif;
+  margin-bottom: 4px;
+}
+
+.form-campo input {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  background: var(--cor-4);
+  border: 1px solid var(--cor-5);
+  padding: 8px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.form-campo input:focus {
+  outline: none;
+  border-color: var(--cor-p1);
+  background: var(--cor-1);
+  box-shadow: 0 0 1px 1px #ded0f2;
+}
+
+.senha-container {
+  position: relative;
+}
+
+.senha-container img {
+  position: absolute;
+  right: 10px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.controle-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.controle-box div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.controle-box a:hover {
+  color: var(--cor-8);
+}
+
+.botao {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  background: linear-gradient(135deg, var(--cor-p4), var(--cor-p3), var(--cor-p2));
+  color: var(--cor-p1);
+  font: 600 1.125rem/1.35 "Outfit", sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: 300ms;
+  margin-bottom: 20px;
+}
+
+.botao:hover {
+  color: var(--cor-p2);
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+.divider::before {
+  margin-right: 10px;
+}
+
+.divider::after {
+  margin-left: 10px;
+}
+
+.opcoes-login {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.opcoes-login a {
+  display: block;
+  padding: 4px 32px;
+  background: var(--cor-4);
+  border: 1px solid var(--cor-5);
+  border-radius: 4px;
+  transition: 300ms;
+}
+
+.opcoes-login a:hover {
+  background: var(--cor-5);
+}
+
+
+@media (max-width: 400px) {
+  .opcoes-login {
+    justify-content: center;
+  }
+}

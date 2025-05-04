@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página de Login">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="preload" href="/css/style.min.css" as="style">
+  <link rel="stylesheet" href="/css/style.min.css">
+  <title>Login</title>
+</head>
+<body>
+  <main class="container">
+    <div class="login-box">
+      <img class="digital" src="/img/fingerprint.svg" alt="Imagem de uma digital" width="48" height="48">
+      <h1 class="font-1-g cor-9">Login</h1>
+      <p class="font-2-pp cor-7">Digite seu email e senha para acessar sua conta.</p>
+
+      <form class="form" action="#">
+        <div class="form-campo">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required aria-label="Email">
+        </div>
+        <div class="senha-container form-campo">
+          <label for="senha">Senha</label>
+          <input type="password" name="senha" id="senha" required aria-label="Senha">
+          <img class="senha-imagem" src="/img/visibilidade-off.svg" alt="Mostrar senha" width="20" height="20">
+        </div>
+        <div class="controle-box font-2-pp cor-7">
+          <div>
+            <input type="checkbox" name="lembre-me" id="lembre-me">
+            <label for="lembre-me">Lembre-me</label>
+          </div>
+            <a href="#">Esqueceu a senha?</a>
+        </div>
+        <button class="botao font-1-p" type="submit">Login</button>
+      </form>
+      <div class="divider">
+        <span class="font-2-pp cor-7">ou</span>
+      </div>
+      <ul class="opcoes-login">
+        <li><a href="#"><img src="/img/google.svg" alt="google" width="32" height="32"></a></li>
+        <li><a href="#"><img src="/img/facebook.svg" alt="facebook" width="32" height="32"></a></li>
+        <li><a href="#"><img src="/img/apple.svg" alt="apple" width="32" height="32"></a></li>
+      </ul>
+    </div>
+  </main>
+  <script src="/js/script.js"></script>
+</body>
+</html>
