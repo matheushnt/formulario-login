@@ -6,7 +6,7 @@ Este é um projeto simples de formulário de login desenvolvido com fins de trei
 
 - HTML
 - CSS
-- JavaScript *(se aplicável)*  
+- JavaScript  
 
 ## 💡 Objetivo
 
